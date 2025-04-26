@@ -1,0 +1,1 @@
+A web application for requesting and building custom Discord Servers, developed using React.js, FastAPI, PostgreSQL, Firebase auth, and Socket.IO.
