@@ -1,0 +1,25 @@
+# Node modules (React frontend)
+node_modules/
+# Build output
+build/
+# Local environment variables (for later)
+.env
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Visual Studio temporary files
+.vs/
+
+# Firebase admin SDK private key
+backend/Discord_Builders/serviceAccountKey.json
+
+# Database data files
+*.db
+*.sqlite3
+
+# System files
+.DS_Store
+Thumbs.db
