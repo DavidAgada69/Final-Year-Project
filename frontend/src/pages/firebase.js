@@ -1,19 +1,19 @@
-// Import the functions from firebase SDKs
+// --- Import Firebase SDK functions ---
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-// Firebase project config from firebase project
+// --- Load environment variables ---
 const firebaseConfig = {
-    apiKey: "AIzaSyCkdnxwPDz9EpquPiPTQTPk_L5iZi4dHFA",
-    authDomain: "dnet-builders.firebaseapp.com",
-    projectId: "dnet-builders",
-    storageBucket: "dnet-builders.firebasestorage.app",
-    messagingSenderId: "664593264046",
-    appId: "1:664593264046:web:258252b1f7b634ac0b6c3f"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-// Initialize firebase app
+// --- Initialize Firebase ---
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-// Initialize Firebase Authentication
-export const auth = getAuth(app);
+export { auth };
