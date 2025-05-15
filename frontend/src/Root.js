@@ -9,7 +9,8 @@ import Register from "./pages/Register"; // Register page
 import Home from "./pages/Home";
 import Request from "./pages/Request";
 import Tutorial from "./pages/Tutorial"
-import Dashboard from "./pages/Dashboard";
+import BuilderDashboard from "./pages/BuilderDashboard";
+import AcceptRequests from "./pages/AcceptRequests";
 // --- Root Component with Routing ---
 function Root() {
     return (
@@ -26,8 +27,9 @@ function Root() {
                 {/* Route for Tutorial Page */}
                 <Route path="/tutorial" element={<Tutorial />} />
                 {/* Route for Dashboard Page */}
-                <Route path="/dashboard" element={<Dashboard />} />
-                
+                <Route path="/dashboard" element={<BuilderDashboard />} />
+                {/* Route for Request List Page */}
+                <Route path="accept-requests" element={<AcceptRequests />} />
             </Routes>
         </Router>
     );

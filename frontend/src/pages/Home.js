@@ -17,11 +17,14 @@ function Home() {
                 <button className="home-button" onClick={() => goTo("/request")}>
                     Submit Server Request
                 </button>
-                <button className="home-button" onClick={() => goTo("/tutorial")}>
-                    View Tutorials
+                <button className="home-button" onClick={() => goTo("/accept-requests")}>
+                    View Requests
                 </button>
                 <button className="home-button" onClick={() => goTo("/dashboard")}>
                     Manage My Account
+                </button>
+                <button className="home-button" onClick={() => goTo("/tutorial")}>
+                    View Tutorials
                 </button>
             </div>
         </div>

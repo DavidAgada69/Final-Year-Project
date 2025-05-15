@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from .database import Base, engine
 from .routes import auth
 from .utils import firebase
+from backend.routes import request
 
 # --- Create database tables ---
 Base.metadata.create_all(bind=engine)
@@ -21,3 +22,6 @@ app.add_middleware(
 
 # --- Include API Routers ---
 app.include_router(auth.router)
+
+# --- Include Request Route ---
+app.include_router(request.router)
